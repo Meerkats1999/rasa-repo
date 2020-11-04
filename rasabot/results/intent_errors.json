@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Mumbai",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "search_provider",
+      "confidence": 0.2452650384177974
+    }
+  },
+  {
+    "text": "Bangalore",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "search_provider",
+      "confidence": 0.2452650384177974
+    }
+  }
+]
