@@ -4,7 +4,7 @@
     "intent": "None",
     "intent_prediction": {
       "name": "Software Recommendation",
-      "confidence": 0.6973843955545782
+      "confidence": 0.9356160759925842
     }
   },
   {
@@ -12,7 +12,15 @@
     "intent": "None",
     "intent_prediction": {
       "name": "Software Recommendation",
-      "confidence": 0.7498378468414592
+      "confidence": 0.7736248970031738
+    }
+  },
+  {
+    "text": "In Unity how do I see the details of a given launcher?",
+    "intent": "Software Recommendation",
+    "intent_prediction": {
+      "name": "Shutdown Computer",
+      "confidence": 0.6340992450714111
     }
   }
 ]

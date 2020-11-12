@@ -1,80 +1,52 @@
 {
-  "greet": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 6,
-    "confused_with": {}
-  },
-  "search_provider": {
-    "precision": 0.6,
-    "recall": 1.0,
-    "f1-score": 0.7499999999999999,
-    "support": 3,
-    "confused_with": {}
-  },
-  "bot_challenge": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
-  },
-  "inform": {
+  "None": {
     "precision": 0.0,
     "recall": 0.0,
     "f1-score": 0.0,
     "support": 2,
     "confused_with": {
-      "search_provider": 2
+      "Software Recommendation": 2
     }
   },
-  "deny": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 6,
-    "confused_with": {}
-  },
-  "mood_great": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 8,
-    "confused_with": {}
-  },
-  "affirm": {
+  "Setup Printer": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 5,
     "confused_with": {}
   },
-  "mood_unhappy": {
+  "Shutdown Computer": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "Make Update": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 10,
     "confused_with": {}
   },
-  "goodbye": {
-    "precision": 1.0,
+  "Software Recommendation": {
+    "precision": 0.8571428571428571,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4,
+    "f1-score": 0.923076923076923,
+    "support": 12,
     "confused_with": {}
   },
-  "accuracy": 0.9583333333333334,
+  "accuracy": 0.9428571428571428,
   "macro avg": {
-    "precision": 0.8444444444444444,
-    "recall": 0.8888888888888888,
-    "f1-score": 0.8611111111111112,
-    "support": 48
+    "precision": 0.7714285714285715,
+    "recall": 0.8,
+    "f1-score": 0.7846153846153846,
+    "support": 35
   },
   "weighted avg": {
-    "precision": 0.9333333333333332,
-    "recall": 0.9583333333333334,
-    "f1-score": 0.9427083333333334,
-    "support": 48
+    "precision": 0.8938775510204081,
+    "recall": 0.9428571428571428,
+    "f1-score": 0.9164835164835166,
+    "support": 35
   }
 }

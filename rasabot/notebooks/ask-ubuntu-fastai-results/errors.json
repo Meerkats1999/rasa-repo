@@ -4,7 +4,7 @@
     "intent": "None",
     "intent_prediction": {
       "name": "Software Recommendation",
-      "confidence": 0.6973843955545782
+      "confidence": 0.35914137959480286
     }
   },
   {
@@ -12,7 +12,7 @@
     "intent": "None",
     "intent_prediction": {
       "name": "Software Recommendation",
-      "confidence": 0.7498378468414592
+      "confidence": 0.3018698990345001
     }
   }
 ]

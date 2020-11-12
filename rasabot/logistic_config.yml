@@ -1,6 +1,6 @@
 language: en
 pipeline:
-  - name: "LogisticClassifier"              
+  - name: "LogisticClassifier"          
 
 policies:
   - name: MemoizationPolicy

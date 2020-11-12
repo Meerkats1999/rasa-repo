@@ -1,0 +1,256 @@
+[
+  {
+    "text": "Upgrade 10.10 to 11.04",
+    "entities": [
+      {
+        "start": 8,
+        "end": 10,
+        "value": "10.10",
+        "entity": "UbuntuVersion"
+      },
+      {
+        "start": 17,
+        "end": 22,
+        "value": "11.04",
+        "entity": "UbuntuVersion"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "UbuntuVersion",
+        "start": 17,
+        "end": 22,
+        "confidence_entity": 0.600446498668701,
+        "value": "11.04",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How to upgrade from 14.04 LTS or [](UbuntuVersion:15.10)4 LTS or 15.10 to [](UbuntuVersion:16.04).04 LTS or 15.10 to 16.04 from terminal",
+    "entities": [
+      {
+        "start": 20,
+        "end": 29,
+        "value": "14.04 LTS",
+        "entity": "UbuntuVersion"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "UbuntuVersion",
+        "start": 20,
+        "end": 29,
+        "confidence_entity": 0.8381004847866,
+        "value": "14.04 LTS",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "UbuntuVersion",
+        "start": 65,
+        "end": 70,
+        "confidence_entity": 0.7730295926288417,
+        "value": "15.10",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "UbuntuVersion",
+        "start": 108,
+        "end": 113,
+        "confidence_entity": 0.778076777397067,
+        "value": "15.10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Is any offline upgrade from 13.10 to 14.04 possible?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 33,
+        "value": "13.10",
+        "entity": "UbuntuVersion"
+      },
+      {
+        "start": 37,
+        "end": 39,
+        "value": "14.04",
+        "entity": "UbuntuVersion"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "UbuntuVersion",
+        "start": 28,
+        "end": 33,
+        "confidence_entity": 0.7358121551814713,
+        "value": "13.10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Upgrading Ubuntu Server 9.1010 to 10.04",
+    "entities": [
+      {
+        "start": 24,
+        "end": 28,
+        "value": "9.10",
+        "entity": "UbuntuVersion"
+      },
+      {
+        "start": 28,
+        "end": 39,
+        "value": "10.04",
+        "entity": "UbuntuVersion"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is there an upgrade procedure from 12.04 LTS to [](UbuntuVersion:14.04 LTS) to 14.04 LTS",
+    "entities": [
+      {
+        "start": 35,
+        "end": 44,
+        "value": "12.04 LTS",
+        "entity": "UbuntuVersion"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "UbuntuVersion",
+        "start": 35,
+        "end": 44,
+        "confidence_entity": 0.7518269005703522,
+        "value": "12.04 LTS",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "UbuntuVersion",
+        "start": 79,
+        "end": 88,
+        "confidence_entity": 0.9580089215430256,
+        "value": "14.04 LTS",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How do I update Xubuntu 11.10Xubuntu 11.10 to Xubuntu 12.04 LTS?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 29,
+        "value": "Xubuntu 11.10",
+        "entity": "UbuntuVersion"
+      },
+      {
+        "start": 29,
+        "end": 64,
+        "value": "Xubuntu 12.04 LTS?",
+        "entity": "UbuntuVersion"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "UbuntuVersion",
+        "start": 37,
+        "end": 42,
+        "confidence_entity": 0.6383329998887789,
+        "value": "11.10",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "UbuntuVersion",
+        "start": 54,
+        "end": 63,
+        "confidence_entity": 0.6646304435439969,
+        "value": "12.04 LTS",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How do I install drivers for the Panasonic MB1900CX All-in-One Printer/Scanner?",
+    "entities": [
+      {
+        "start": 33,
+        "end": 51,
+        "value": "Panasonic MB1900CX",
+        "entity": "Printer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How to Install Brother DCP-8110DN Laser Printer on Ubuntu?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 47,
+        "value": "Brother DCP-8110DN",
+        "entity": "Printer"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How to add a network printer on Ubuntu 15.10?",
+    "entities": [
+      {
+        "start": 39,
+        "end": 45,
+        "value": "15.10",
+        "entity": "UbuntuVersion"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "UbuntuVersion",
+        "start": 39,
+        "end": 44,
+        "confidence_entity": 0.5392311734771112,
+        "value": "15.10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "In Unity how do I see the details of a given launcher?",
+    "entities": [
+      {
+        "start": 3,
+        "end": 8,
+        "value": "Unity",
+        "entity": "SoftwareName"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What do you use to edit Microsoft Word documents (docx)?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 38,
+        "value": "Word",
+        "entity": "SoftwareName"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "MySQL GUI Tools",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "MySQL",
+        "entity": "SoftwareName"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

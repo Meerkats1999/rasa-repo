@@ -1,32 +1,38 @@
 {
-  "location": {
+  "Printer": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 3
+    "recall": 0.4,
+    "f1-score": 0.5714285714285715,
+    "support": 10
   },
-  "facility_type": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+  "UbuntuVersion": {
+    "precision": 0.8181818181818182,
+    "recall": 0.6206896551724138,
+    "f1-score": 0.7058823529411765,
+    "support": 29
+  },
+  "SoftwareName": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
     "support": 3
   },
   "micro avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 6
+    "precision": 0.8461538461538461,
+    "recall": 0.5238095238095238,
+    "f1-score": 0.6470588235294118,
+    "support": 42
   },
   "macro avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 6
+    "precision": 0.6060606060606061,
+    "recall": 0.34022988505747126,
+    "f1-score": 0.42577030812324934,
+    "support": 42
   },
   "weighted avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 6
+    "precision": 0.8030303030303032,
+    "recall": 0.5238095238095238,
+    "f1-score": 0.6234493797519008,
+    "support": 42
   }
 }
