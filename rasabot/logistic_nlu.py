@@ -5,14 +5,21 @@ from typing import Any, Optional, Text, Dict, List, Type, Tuple
 import numpy as np
 import pandas as pd
 
+import pandas as pd
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import precision_score, recall_score, accuracy_score, f1_score, confusion_matrix
+from sklearn.linear_model import LogisticRegression
+
 from rasa.nlu.components import Component
 from rasa.nlu.config import RasaNLUModelConfig
 from rasa.nlu.training_data import TrainingData, Message
+from rasa.nlu.model import Metadata
 from rasa.nlu.featurizers.featurizer import sequence_to_sentence_features
 from rasa.nlu.constants import DENSE_FEATURE_NAMES, TEXT
 
-from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import StandardScaler
+import pickle
 
 if typing.TYPE_CHECKING:
     from rasa.nlu.model import Metadata
@@ -50,7 +57,7 @@ class LogisticClassifier(Component):
     def __init__(self, component_config: Optional[Dict[Text, Any]] = None) -> None:
         super().__init__(component_config)
         #self.le = LabelEncoder()
-        self.clf = LogisticRegression(random_state = 0) #You can try to fit your own model
+        #self.clf = LogisticRegression(random_state = 0) #You can try to fit your own model
 
     def train(
         self,
@@ -85,16 +92,27 @@ class LogisticClassifier(Component):
 
         # self.clf.fit(X, y)
 
-        dataset = pd.read_csv('/home/abhrajyoti/stuff/rasa-tut/Social_Network_Ads.csv')
-        X = dataset.iloc[:, :-1].values
-        y = dataset.iloc[:, -1].values
+        # dataset = pd.read_csv('/home/abhrajyoti/stuff/rasa-tut/rasabot/data/ubuntu_intents.csv')
+        # X = dataset.iloc[:, :-1].values
+        # y = dataset.iloc[:, -1].values
 
-        from sklearn.preprocessing import StandardScaler
-        sc = StandardScaler()
-        X_train = sc.fit_transform(X)
-        X_test = sc.transform(X)
+        # from sklearn.preprocessing import StandardScaler
+        # sc = StandardScaler()
+        # X_train = sc.fit_transform(X)
+        # X_test = sc.transform(X)
 
-        self.clf.fit(X_train, y)
+        # self.clf.fit(X_train, y)
+
+    #     intents = pd.read_csv('/home/abhrajyoti/stuff/rasa-tut/rasabot/data/ubuntu_intents.csv')
+
+    #     v = TfidfVectorizer()
+    #     vectors = v.fit_transform(intents['text'])
+
+    #     X, y = vectors, intents['label']
+    #    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+
+    #     self.clf.fit(X, y)
+        pass
 
 
     def transform_labels_str2num(self, labels: List[Text]) -> np.ndarray:
@@ -115,7 +133,21 @@ class LogisticClassifier(Component):
         on any context attributes created by a call to
         :meth:`components.Component.process`
         of components previous to this one."""
-        pass
+
+        filename = '/home/abhrajyoti/stuff/rasa-tut/rasabot/notebooks/finalized_model.sav'
+        tvet_file = '/home/abhrajyoti/stuff/rasa-tut/rasabot/notebooks/vectorizer.sav'
+        self.clf = pickle.load(open(filename, 'rb'))
+        self.v = pickle.load(open(tvet_file, 'rb'))
+
+        vectors = self.v.transform([message.text])
+
+        predictions = self.clf.predict(vectors)
+        print(predictions)
+
+
+        # metadata = message.get("metadata")
+        # print(metadata.get("intent"))
+        # print(metadata.get("example"))
 
     def persist(self, file_name: Text, model_dir: Text) -> Optional[Dict[Text, Any]]:
         """Persist this component to disk for future loading."""
@@ -136,3 +168,4 @@ class LogisticClassifier(Component):
             return cached_component
         else:
             return cls(meta)
+
